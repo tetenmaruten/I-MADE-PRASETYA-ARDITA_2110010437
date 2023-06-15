@@ -14,6 +14,36 @@ public class supplier {
     private String alamat;
     private String noHp;
 
+    public supplier() {
+    }
+    
+    public supplier(String kodeSupplier ) {
+        this.kodeSupplier = kodeSupplier;
+        
+    }
+    
+    public supplier(String kodeSupplier, String namaSupplier) {
+        this.kodeSupplier = kodeSupplier;
+        this.namaSupplier = namaSupplier;
+       
+    }
+    
+    public supplier(String kodeSupplier, String namaSupplier, String alamat ) {
+        this.kodeSupplier = kodeSupplier;
+        this.namaSupplier = namaSupplier;
+        this.alamat = alamat;
+        
+    }
+    
+    
+    public supplier(String kodeSupplier, String namaSupplier, String alamat, String noHp) {
+        this.kodeSupplier = kodeSupplier;
+        this.namaSupplier = namaSupplier;
+        this.alamat = alamat;
+        this.noHp = noHp;
+    }
+    
+    
     public String getKodeSupplier() {
         return kodeSupplier;
     }
@@ -45,17 +75,6 @@ public class supplier {
     public void setNoHp(String noHp) {
         this.noHp = noHp;
     }
-    public void getInfo(boolean showAddress, boolean showPhone) {
-        System.out.println("Kode Supplier: " + kodeSupplier);
-        System.out.println("Nama Supplier: " + namaSupplier);
-
-        if (showAddress) {
-            System.out.println("Alamat: " + alamat);
-        }
-
-        if (showPhone) {
-            System.out.println("No HP: " + noHp);
-        }
-    }
+    
 }
 

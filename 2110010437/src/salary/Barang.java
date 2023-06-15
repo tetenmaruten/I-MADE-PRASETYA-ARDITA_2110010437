@@ -16,7 +16,61 @@ public class Barang {
     private String type;
     private int stok;
     private String satuan;
-
+    
+    
+    
+    public Barang(){
+    }
+    
+    public Barang(String kodeBarang ) {
+    this.kodeBarang = kodeBarang;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang ) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang, String namaSupplier ) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    this.namaSupplier = namaSupplier;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang, String namaSupplier, String warna) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    this.namaSupplier = namaSupplier;
+    this.warna = warna;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang, String namaSupplier, String warna, String type) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    this.namaSupplier = namaSupplier;
+    this.warna = warna;
+    this.type = type;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang, String namaSupplier, String warna, String type, int stok ) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    this.namaSupplier = namaSupplier;
+    this.warna = warna;
+    this.type = type;
+    this.stok = stok;
+    }
+    
+    public Barang(String kodeBarang, String namaBarang, String namaSupplier, String warna, String type, int stok, String satuan ) {
+    this.kodeBarang = kodeBarang;
+    this.namaBarang = namaBarang;
+    this.namaSupplier = namaSupplier;
+    this.warna = warna;
+    this.type = type;
+    this.stok = stok;
+    this.satuan = satuan;
+    }
+    
     public String getKodeBarang() {
         return kodeBarang;
     }

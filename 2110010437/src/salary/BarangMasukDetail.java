@@ -4,6 +4,7 @@
  */
 package salary;
 
+
 /**
  *
  * @author ASUS
@@ -11,8 +12,36 @@ package salary;
 public class BarangMasukDetail {
     private int idBmd;
     private String kodeBarang;
+    private int jumlahMasuk;
     private String kodeSuratJalan;
-
+    
+    public BarangMasukDetail(){
+        
+    }
+    
+    public BarangMasukDetail(int idBmd) {
+        this.idBmd = idBmd;
+    }
+    
+    public BarangMasukDetail(int idBmd, String kodeBarang ) {
+        this.idBmd = idBmd;
+        this.kodeBarang = kodeBarang;
+    }
+    
+    public BarangMasukDetail(int idBmd, String kodeBarang, int jumlahMasuk ) {
+        this.idBmd = idBmd;
+        this.kodeBarang = kodeBarang;
+        this.jumlahMasuk = jumlahMasuk;
+    }
+    
+    public BarangMasukDetail(int idBmd, String kodeBarang, int jumlahMasuk, String kodeSuratJalan ) {
+        this.idBmd = idBmd;
+        this.kodeBarang = kodeBarang;
+        this.jumlahMasuk = jumlahMasuk;
+        this.kodeSuratJalan = kodeSuratJalan;
+        
+    }
+    
     public int getIdBmd() {
         return idBmd;
     }
@@ -27,6 +56,14 @@ public class BarangMasukDetail {
 
     public void setKodeBarang(String kodeBarang) {
         this.kodeBarang = kodeBarang;
+    }
+    
+    public int getJumlahMasuk() {
+        return jumlahMasuk;
+    }
+
+    public void setJumlahMasuk(int jumlahMasuk) {
+        this.jumlahMasuk = jumlahMasuk;
     }
 
     public String getKodeSuratJalan() {

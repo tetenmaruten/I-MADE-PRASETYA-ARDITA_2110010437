@@ -21,6 +21,90 @@ public class User {
     private Date createdAt;
     private Date updatedAt;
 
+    public User(){
+        
+    }
+    
+    
+    public User(int userId) {
+        this.userId = userId;        
+    }
+    
+    public User(int userId, String username) {
+        this.userId = userId;
+        this.username = username;       
+    }
+    
+    public User(int userId, String username, String namaUser, String password) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+    }
+    
+    public User(int userId, String username, String namaUser, String password, String email) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;        
+    }
+    public User(int userId, String username, String namaUser, String password, String email, String telepon) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;
+        this.telepon = telepon;        
+    }
+    
+    public User(int userId, String username, String namaUser, String password, String email, String telepon, String foto) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;
+        this.telepon = telepon;
+        this.foto = foto;        
+    }
+    
+    public User(int userId, String username, String namaUser, String password, String email, String telepon, String foto, String hakAkses) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;
+        this.telepon = telepon;
+        this.foto = foto;
+        this.hakAkses = hakAkses;
+    }
+    
+    public User(int userId, String username, String namaUser, String password, String email, String telepon, String foto, String hakAkses, Date createdAt) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;
+        this.telepon = telepon;
+        this.foto = foto;
+        this.hakAkses = hakAkses;
+        this.createdAt = createdAt;        
+    }
+    
+    public User(int userId, String username, String namaUser, String password, String email, String telepon, String foto, String hakAkses, Date createdAt, Date updatedAt ) {
+        this.userId = userId;
+        this.username = username;
+        this.namaUser = namaUser;
+        this.password = password;
+        this.email = email;
+        this.telepon = telepon;
+        this.foto = foto;
+        this.hakAkses = hakAkses;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        
+    }
+    
     public int getUserId() {
         return userId;
     }

@@ -13,7 +13,27 @@ public class BarangKeluar {
     private Date tanggal;
     private String kodeBarang;
     private int jumlahKeluar;
-
+    
+    
+    public BarangKeluar(){
+        
+    }
+    
+    public BarangKeluar(Date tanggal) {
+        this.tanggal = tanggal;
+    }
+    
+    public BarangKeluar(Date tanggal, String kodeBarang ) {
+        this.tanggal = tanggal;
+        this.kodeBarang = kodeBarang;   
+    }
+    
+    public BarangKeluar(Date tanggal, String kodeBarang, int jumlahKeluar ) {
+        this.tanggal = tanggal;
+        this.kodeBarang = kodeBarang;
+        this.jumlahKeluar = jumlahKeluar;   
+    }
+    
     public Date getTanggal() {
         return tanggal;
     }
